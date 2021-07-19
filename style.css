@@ -1,27 +1,56 @@
-.page {
+body {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 0;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: .875rem;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
 .header {
-    font-family: arial;
-    font-size: 14px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-shrink: 0;
-    box-sizing: border-box;
-    padding: 6px;
-    height: 60px;
+    padding: 0 .6em;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0
+}
+
+.left-header {
+    width: 20%;
 }
 .right-header {
-    
+    width: 80%;
+    flex-wrap: nowrap;
 }
+
+.right-header ul {
+    justify-content: flex-end;
+    align-items: center;
+}
+li {
+    padding-left: .6rem;
+}
+
 .profile-pic{
     border-radius: 50%; 
-    width: 32px; 
-    height: 32px
+    width: 2.25em; 
+    height: 2.25em;
 }
+
 .logo {
     margin-left: auto;
     margin-right: auto;
@@ -31,6 +60,15 @@
 .search {
 
 }
+.space {
+    flex-grow: 1;
+}
+
 .footer {
     display: flex;
+    background: #f2f2f2;
+    align-items: center;
+    justify-content: space-between;
 }
+
+
