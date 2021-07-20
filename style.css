@@ -3,16 +3,16 @@ body {
     flex-direction: column;
     font-family: Arial, sans-serif;
     margin: 0;
+    font-size: .875rem;
 }
 
 a {
     text-decoration: none;
-    color: black;
-    font-size: .875rem;
+    cursor: pointer;
+    color: #222;
 }
 
-a:hover,
-a:focus {
+a:hover {
     text-decoration: underline;
 }
 
@@ -21,6 +21,8 @@ a:focus {
     justify-content: space-between;
     align-items: center;
     padding: 0 .6em;
+    color: #222;
+    margin-bottom: 8em;
 }
 
 ul {
@@ -52,8 +54,7 @@ li {
 }
 
 .logo {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     display: block;
     width: 272px;
 }
@@ -64,37 +65,65 @@ li {
     width: 45%;
 }
 
-.input-contatiner{
+.search-bar-contatiner{
     display: flex;
     align-items: center;
     border: 1px solid #dfe1e5;
     border-radius: 26px;
     width: 90%;
-    margin: 2em 0;
+    margin: 2em auto;
     padding-left: .75em;
-    height: 2.75em;
+    height: 3em;
 }
 
-.input-contatiner:hover{
+.search-bar-contatiner:hover{
     box-shadow: 2px 2px 5px #dfe1e5;
 }
 
-.input-contatiner input{
+.text-input-container{
     background: none;
-    margin-left: .75em;
-    flex-basis: fit-content;
+    width: 90%;
+}
+
+.text-input-container input {
+    width: 100%;
+    min-width: 0;
+    border: 0;
+    background: none;
 }
 
 .search-icon{
     width: 1.25em;
+    margin-right: .775em;
 }
 
-.buttons {
+.button-container {
+    display: flex;
     align-self: center;
+    justify-content: space-between;
+}
+
+.button-container button {
+    border: none;
+    background-color: #f8f9fa;
+    font-size: 1em;
+    color: #3c4043;
+    margin-right: 1em;
+    padding: .9em;
+    cursor: pointer;
+    
+}
+
+.button-container button:hover {
+    border: 1px solid #cfc9c9;
+    border-radius: 5px;
+    text-decoration: none;
 }
 
 .footer {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
     background: #f2f2f2;
     align-items: center;
     position: fixed;
@@ -102,9 +131,27 @@ li {
     width: 100%;
 }
 
+
 .right-footer {
-    align-self: flex-end;
+    width: 80%;
+    align-items: flex-end;
 }
+
+.left-footer{
+    width: 20%;
+}
+
+
+.right-footer ul {
+    justify-content: flex-end;
+    margin-right: .5;
+}
+
+.right-footer li {
+    padding-right: .6em;
+}
+
+
 
 
 
